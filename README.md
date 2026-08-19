@@ -1,11 +1,11 @@
-# Moonshot 面试准备
+# 面试准备
 
-姚金盟 · Moonshot（月之暗面）Coding Agent 岗位面试准备资料库。
+Coding Agent 岗位面试准备资料库。
 
 ## 目录结构
 
 ```
-Moonshot面试准备/
+面试准备/
 ├── 简历/                       # 简历（HTML）
 │   ├── 姚金盟-简历-CodingAgent-v13-一页.html   # 当前最新版
 │   └── 历史版本/               # v9 / v9-两页 / v10 / v11 / v12
