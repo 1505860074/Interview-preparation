@@ -1,0 +1,204 @@
+<title>姚金盟 · Coding Agent 研发工程师简历（一页·正常字号）</title>
+<style>
+  :root{
+    --ink:#1a1a1a; --sub:#666; --line:#dfe4ec; --accent:#1f5fa8; --accent-soft:#eef3fa; --hl:#b23b2e;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html,body{background:#f2f4f7;}
+  body{
+    font-family:"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Source Han Sans SC","Noto Sans CJK SC",sans-serif;
+    color:var(--ink); line-height:1.55; font-size:11px; -webkit-font-smoothing:antialiased;
+  }
+  .page{
+    width:210mm; min-height:297mm; margin:10px auto; background:#fff; padding:12mm 13mm;
+    box-shadow:0 2px 14px rgba(0,0,0,.12);
+  }
+  a{color:var(--accent); text-decoration:none;}
+
+  /* ===== 抬头 ===== */
+  header{border-bottom:2px solid var(--accent); padding-bottom:9px; margin-bottom:4px;}
+  .name-row{display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:6px;}
+  .name{font-size:24px; font-weight:800; letter-spacing:3px;}
+  .target{font-size:12.5px; color:var(--accent); font-weight:700;}
+  .meta{margin-top:6px; color:var(--sub); font-size:10.4px; display:flex; flex-wrap:wrap; gap:4px 16px;}
+  .meta b{color:var(--ink); font-weight:600;}
+
+  /* ===== 章节 ===== */
+  section{margin-top:12px; break-inside:avoid;}
+  h2{
+    font-size:12.5px; color:var(--accent); font-weight:800; letter-spacing:1px;
+    border-bottom:1px solid var(--line); padding-bottom:4px; margin-bottom:6px;
+    display:flex; align-items:center; gap:6px;
+  }
+  h2::before{content:""; width:4px; height:13px; background:var(--accent); border-radius:2px; display:inline-block;}
+  h2 .note{font-weight:400; color:var(--sub); font-size:10px; letter-spacing:0;}
+
+  /* ===== 条目 ===== */
+  .item{margin-bottom:8px;}
+  .item:last-child{margin-bottom:0;}
+  .item-head{display:flex; justify-content:space-between; align-items:baseline; gap:8px; margin-bottom:1px;}
+  .item-title{font-weight:700; font-size:11.5px;}
+  .item-title .role{font-weight:500; color:#333; font-size:10.8px;}
+  .tech{color:var(--sub); font-weight:400; font-size:10px;}
+  .date{color:var(--sub); font-size:10.2px; white-space:nowrap;}
+  .repo{color:var(--accent); font-size:9.8px; white-space:nowrap;}
+
+  ul{list-style:none;}
+  ul li{position:relative; padding-left:12px; margin:2.5px 0; text-align:justify;}
+  ul li::before{content:""; position:absolute; left:2px; top:6.5px; width:4px; height:4px; border-radius:50%; background:var(--accent);}
+  .lead-in{font-weight:700; color:#111;}
+  .hl{font-weight:700; color:var(--hl);}
+  .mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace; font-size:10px; color:#333;}
+
+  .edu-line{display:flex; justify-content:space-between; align-items:baseline;}
+  .tag{display:inline-block; background:var(--accent-soft); color:var(--accent); font-size:9.4px;
+       padding:0 5px; border-radius:3px; margin:0 3px; font-weight:600; vertical-align:middle;}
+
+  .summary{color:#333; text-align:justify;}
+
+  /* 第一屏「核心技术栈」高亮条 */
+  .stack{
+    margin-top:6px; font-size:10.4px; color:#333; line-height:1.5;
+    background:var(--accent-soft); border-left:3px solid var(--accent);
+    padding:5px 9px; border-radius:0 4px 4px 0; text-align:justify;
+  }
+  .stack .k{font-weight:700; color:var(--accent);}
+
+  @media print{
+    html,body{background:#fff; font-size:11px; line-height:1.48;}
+    .page{margin:0; box-shadow:none; width:auto; min-height:auto; padding:9mm 12mm;}
+    @page{size:A4; margin:0;}
+    a{color:var(--accent);}
+    section{margin-top:9px;}
+    h2{margin-bottom:5px; padding-bottom:3.5px;}
+    .item{margin-bottom:6px;}
+    ul li{margin:2px 0;}
+    .stack{margin-top:5px;}
+  }
+</style>
+
+<div class="page">
+
+  <header>
+    <div class="name-row">
+      <div class="name">姚&nbsp;金&nbsp;盟</div>
+      <div class="target">求职意向：Coding Agent 研发工程师</div>
+    </div>
+    <div class="meta">
+      <span>男 · 2025 届本科</span>
+      <span><b>手机</b> 13179826929</span>
+      <span><b>邮箱</b> 1505860074@qq.com</span>
+      <span><b>GitHub</b> <a href="https://github.com/1505860074">github.com/1505860074</a></span>
+    </div>
+  </header>
+
+  <section>
+    <h2>自我定位</h2>
+    <p class="summary">哈尔滨工业大学（985）信息与计算科学本科，具备扎实的 C++ / Python 工程能力，能独立完成从系统拆解、方案设计到编码交付与验证的完整闭环。在真实工作中以 <span class="lead-in">Agent Loop / Tool Use / MCP</span> 搭建端到端自动化流水线（headless 调度、跨源检索、定时无人值守产出），并系统性横向对比 Claude Code / Cursor / opencode / Aider 在上下文工程、工具调用、任务规划与失败恢复上的设计取舍，能准确判断不同 Coding Agent 的能力边界。技术目标明确：<span class="hl">从 Agent 侧提升其稳定性与可评测性</span>；对 Agent 行为敏感，乐于挑刺，也接受被挑刺。</p>
+    <p class="stack">
+      <span class="k">LLM / Agent</span>　Agent Loop · Tool Use · Context Engineering · Prompt Engineering · MCP · Multi-agent · Evaluation · Transformer/自注意力 · 记忆型 Agent（三层记忆）· PyTorch 基础<br>
+      <span class="k">语　　言</span>　C++ · Python · Bash（熟练）　&nbsp;｜&nbsp;　<span class="k">工程</span>　Linux/Shell · Git · CMake/Conan · EtherCAT · clangd · SQLite/FTS5 · pytest · 自动化/功能/性能测试与缺陷跟踪
+    </p>
+  </section>
+
+  <section>
+    <h2>教育背景</h2>
+    <div class="edu-line">
+      <div><span class="item-title">哈尔滨工业大学</span><span class="tag">985 / C9</span>理学院 · 信息与计算科学 · 本科</div>
+      <div class="date">2021.09 – 2025.06</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>竞赛荣誉</h2>
+    <div class="item">
+      <div class="item-head">
+        <div class="item-title">美国大学生数学建模竞赛（MCM/ICM）</div>
+        <div class="date">2023.02 &amp; 2024.02</div>
+      </div>
+      <ul>
+        <li>连续两年参赛，<span class="hl">2 次 H 奖 + 1 次 M 奖（约前 7%–10%）</span>；主导数据清洗、特征工程与预测建模（Python / MATLAB）。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>开源项目 <span class="note">（个人原创项目 + 高分开源项目源码研读）</span></h2>
+
+    <div class="item">
+      <div class="item-head">
+        <div class="item-title">letta-memory-learn <span class="role">· 记忆型 Agent 三层记忆机制复刻</span></div>
+        <div class="repo"><a href="https://github.com/1505860074/letta-memory-learn">/letta-memory-learn</a></div>
+      </div>
+      <ul>
+        <li>研读开源记忆型 Agent 框架 Letta（原名 MemGPT），学习其记忆管理机制；把该机制提纯重写为独立最小可运行项目：以对话为输入、由模型自主调用工具读写外部记忆，复刻 Core / Recall / Archival 三层记忆的完整 agent loop；<span class="hl">厘清「记忆增强 ≠ 权重级持续学习」</span>并配套中文教学文档，技术栈 Python / DeepSeek / pgvector。</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-head"><div class="item-title">LLM / Agent 高分开源项目源码研读 <span class="role">· nanoGPT / code-review-graph</span></div></div>
+      <ul>
+        <li><span class="lead-in">nanoGPT</span> <span class="tech">· Python</span>：学习了自注意力 / 下一 token 预测与训练全流程；跟随源码从零训练出 GPT-2。</li>
+        <li><span class="lead-in">code-review-graph</span> <span class="tech">· Python</span>：研读其用 Tree-sitter 建代码结构图 + MCP 向 AI 提供精准上下文的机制（实测约 <span class="hl">8.2× token 缩减</span>）。</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-head">
+        <div class="item-title">lan-ip-manager <span class="role">· 局域网设备发现与远程改 IP 面板</span></div>
+        <div class="repo"><a href="https://github.com/1505860074/lan-ip-manager">/lan-ip-manager</a></div>
+      </div>
+      <ul>
+        <li>掌握了被动抓包、SSH 远程配置与桌面程序打包；监听本机各网口广播流量自动发现直连设备并输出可选设备列表，选定后经 SSH 远程读写 netplan 改其 IP，支持跨网段临时打通、备份/还原、改完自动 ping 验证；<span class="hl">把繁琐的现场改 IP 操作一键化</span>，技术栈 Python / Flask / scapy，PyInstaller 打包为双击即用桌面程序。</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-head">
+        <div class="item-title">kinco-ethercat-demo <span class="role">· 理料台控制链路最小可运行 demo</span></div>
+        <div class="repo"><a href="https://github.com/1505860074/kinco-ethercat-demo">/kinco-ethercat-demo</a></div>
+      </div>
+      <ul>
+        <li>把工作中理料台控制主干链路提纯为最小可编译 demo：以上位机命令为输入，经 C++ 周期循环驱动 EtherCAT 从站，输出为 Kinco 伺服电机的实际转动；<span class="hl">形成可独立编译、配套中文教学文档的学习项目</span>，技术栈 C++ / Python / EtherCAT（IgH 主站库）。</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-head">
+        <div class="item-title">webm2mp4-autoconvert <span class="role">· 录屏自动转码守护</span></div>
+        <div class="repo"><a href="https://github.com/1505860074/webm2mp4-autoconvert">/webm2mp4-autoconvert</a></div>
+      </div>
+      <ul>
+        <li>掌握了用 systemd 用户服务做常驻守护与崩溃自恢复；以 5s 粒度监控录屏目录（输入 webm），录制稳定后自动转码为 mp4 并按保留期清理，开机自启 + 崩溃重启；<span class="hl">补齐 GNOME「快捷键录屏 → 自动转 mp4」闭环</span>，技术栈 Bash / systemd / ffmpeg。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>工作经历</h2>
+
+    <div class="item">
+      <div class="item-head">
+        <div class="item-title">XYZ Robotics（星猿哲科技） <span class="role">· 软件测试工程师 · 理料台(box-aligner) C++ 控制系统</span></div>
+        <div class="date">2025.07 – 至今</div>
+      </div>
+      <ul>
+        <li><span class="lead-in">理料台 C++ 控制器固件开发与维护：</span>掌握了基于 CMake + Conan 的大型 C++ 控制系统架构与实时控制原理（controller 控制逻辑、EtherCAT 主从站通信、Kinco 伺服运动控制、上位机 socket 通讯）；负责功能开发 / 缺陷修复 / 现场维护，涵盖 EtherCAT 从站与多驱动器（Kinco / moons / MotionLinx）适配、缓推逻辑、高频 log 编译期开关、一键部署工具打包，并修复从站 OP 状态异常、伺服超速、服务崩溃等问题，保障控制系统在多个海外现场稳定交付。</li>
+        <li><span class="lead-in">Agent 自动化提效：</span>用 <span class="hl">Agent Loop / Tool Use / MCP</span> 把重复性排查与信息整理自动化——以 headless 模式脚本化调用 Claude Code 搭建定时无人值守流水线，跑通「拉取数据 → 自动拆解 → 工具调用 → 产出回写」全流程，自动完成「飞书群每日问题总结 → @ 研发跟进」；并自建四套本地知识库（Claude 归档、飞书文档、飞书消息 SQLite + FTS5、Confluence）+ 跨源检索聚合器，按需检索、压缩、生成周报。</li>
+        <li><span class="lead-in">海外项目现场交付：</span>赴意大利 Dematties 装车 / 法国 Blondel 卸车项目现场主导 40 天环境搭建与全工况验证，推动修复 <span class="hl">17 项关键缺陷</span>，并沉淀出控制系统排查知识库。</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-head">
+        <div class="item-title">Bambu Lab（拓竹科技） <span class="role">· 软件测试实习生</span></div>
+        <div class="date">2024.04 – 2024.10</div>
+      </div>
+      <ul>
+        <li><span class="lead-in">P1 / P1S 3D 打印机核心功能测试：</span>深度参与拓竹 P1 / P1S（CoreXY 结构）3D 打印机的核心功能测试，独立负责自动调平算法、AMS 多色打印系统、主动防抖功能的测试攻坚；针对 AMS 多色切换与断料检测设计高覆盖边界值与异常流用例，推动修复 <span class="hl">20+ 关键缺陷</span>。</li>
+        <li><span class="lead-in">Beta 用户反馈闭环运营：</span>主导 Beta 用户反馈闭环，筛选优质社区用户构建核心测试社群，结合售后数据分析用户痛点、搭建标准化复现环境协助研发定位根因，将用户反馈转化为具体的产品优化需求。</li>
+      </ul>
+    </div>
+  </section>
+
+</div>
